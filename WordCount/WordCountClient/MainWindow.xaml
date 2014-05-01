@@ -1,0 +1,53 @@
+﻿<Window x:Class="WordCountClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WordCountClient"
+        Title="Fun With Word Counting" Width="1400">
+    <Window.Resources>
+        <local:KvpArrayValueConverter x:Key="SnapshotConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel Margin="5,5,5,5">
+                    <GroupBox Header="First Client" Margin="10,10,10,10">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Statement:" Margin="2,2,2,2"></TextBlock>
+                                <CheckBox IsChecked="{Binding RemovePunctuation1}">Remove Punctuation</CheckBox>
+                                <TextBox Margin="5,5,5,5" MinHeight="300" MinWidth="300" Name="txtFirstUserRequest"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Response:" Margin="2,2,2,2" MinWidth="300"></TextBlock>
+                                <TextBlock Margin="5,5,5,5"  Text="{Binding FirstUserResponse.Snapshot, Converter={StaticResource SnapshotConverter}}" />
+                                <TextBlock Margin="5,5,5,5"  Text="{Binding FirstUserResponse.Error, Converter={StaticResource SnapshotConverter}}" MaxWidth="300" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+                <StackPanel Margin="5,5,5,5">
+                    <GroupBox Header="Second Client" Margin="10,10,10,10">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Statement:" Margin="2,2,2,2" />
+                                <CheckBox IsChecked="{Binding RemovePunctuation2}">Remove Punctuation</CheckBox>
+                                <TextBox Margin="5,5,5,5" MinHeight="300" MinWidth="300" TextWrapping="Wrap" Name="txtSecondUserRequest"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Response:" Margin="2,2,2,2" MinWidth="300" />
+                                <TextBlock Margin="5,5,5,5"  Text="{Binding SecondUserResponse.Snapshot, Converter={StaticResource SnapshotConverter}}" />
+                                <TextBlock Margin="5,5,5,5"  Text="{Binding SecondUserResponse.Error, Converter={StaticResource SnapshotConverter}}" MaxWidth="300" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Margin="2,2,2,2" Click="Button_Click_1">First Client Send</Button>
+                <Button Margin="2,2,2,2" Click="Button_Click_2">Second Client Send</Button>
+                <Button Margin="2,2,2,2" Click="Button_Click_3">Both Clients Send</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

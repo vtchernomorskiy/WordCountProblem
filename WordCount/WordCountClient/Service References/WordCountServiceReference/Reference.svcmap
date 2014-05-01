@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="68d436dc-e8f0-4aae-b079-b3cef4ea8ef3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50000/wordcount" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WordCount.xsd" MetadataType="Schema" ID="b00c2c41-5463-4675-9076-b1d0715683fc" SourceId="1" SourceUrl="http://localhost:50000/WordCount?xsd=xsd0" />
+    <MetadataFile FileName="WordCount.disco" MetadataType="Disco" ID="48ecd32d-c02e-471e-9700-6005876a95e2" SourceId="1" SourceUrl="http://localhost:50000/WordCount?disco" />
+    <MetadataFile FileName="WordCount1.xsd" MetadataType="Schema" ID="9e89c91e-226c-4419-847b-0141cb74bc49" SourceId="1" SourceUrl="http://localhost:50000/WordCount?xsd=xsd2" />
+    <MetadataFile FileName="WordCount2.xsd" MetadataType="Schema" ID="7d341124-9091-4ee7-b207-4b9baf9f77d9" SourceId="1" SourceUrl="http://localhost:50000/WordCount?xsd=xsd1" />
+    <MetadataFile FileName="WordCounter.wsdl" MetadataType="Wsdl" ID="6df3520f-b828-48b9-ac2b-7a5b2c868d3c" SourceId="1" SourceUrl="http://localhost:50000/WordCount?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

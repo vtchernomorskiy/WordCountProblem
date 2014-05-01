@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountLibrary", "WordCountLibrary\WordCountLibrary.csproj", "{3C6B1863-54B1-4299-A5AF-A1142B13B778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountLibrary.Unit", "WordCountLibrary.Unit\WordCountLibrary.Unit.csproj", "{BE4831B6-3D25-4B54-9058-EEFD6FEE6DB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountUtilities", "WordCountUtilities\WordCountUtilities.csproj", "{26B28783-D506-461D-B8CE-14AAFC4A26CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountLibrary.Interfaces", "WordCountLibrary.Interfaces\WordCountLibrary.Interfaces.csproj", "{494B0E3C-A806-4AC8-ADA8-C8E38D30208A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountClient", "WordCountClient\WordCountClient.csproj", "{45B33F71-9417-4E5E-9C77-47A1AE9F19FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountWcfServiceRunner", "WordCountWcfServiceRunner\WordCountWcfServiceRunner.csproj", "{54746714-2C37-43AC-B230-0D57C4ADB192}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C6B1863-54B1-4299-A5AF-A1142B13B778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C6B1863-54B1-4299-A5AF-A1142B13B778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C6B1863-54B1-4299-A5AF-A1142B13B778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C6B1863-54B1-4299-A5AF-A1142B13B778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4831B6-3D25-4B54-9058-EEFD6FEE6DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4831B6-3D25-4B54-9058-EEFD6FEE6DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4831B6-3D25-4B54-9058-EEFD6FEE6DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4831B6-3D25-4B54-9058-EEFD6FEE6DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B28783-D506-461D-B8CE-14AAFC4A26CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B28783-D506-461D-B8CE-14AAFC4A26CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B28783-D506-461D-B8CE-14AAFC4A26CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B28783-D506-461D-B8CE-14AAFC4A26CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494B0E3C-A806-4AC8-ADA8-C8E38D30208A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494B0E3C-A806-4AC8-ADA8-C8E38D30208A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494B0E3C-A806-4AC8-ADA8-C8E38D30208A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494B0E3C-A806-4AC8-ADA8-C8E38D30208A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B33F71-9417-4E5E-9C77-47A1AE9F19FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B33F71-9417-4E5E-9C77-47A1AE9F19FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B33F71-9417-4E5E-9C77-47A1AE9F19FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B33F71-9417-4E5E-9C77-47A1AE9F19FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54746714-2C37-43AC-B230-0D57C4ADB192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54746714-2C37-43AC-B230-0D57C4ADB192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54746714-2C37-43AC-B230-0D57C4ADB192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54746714-2C37-43AC-B230-0D57C4ADB192}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
